@@ -1,0 +1,14 @@
+.logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    font-family: $font-family-second;
+}
+
+.logo__text {
+    &--blue {
+        color: $second-color;
+    }
+
+}

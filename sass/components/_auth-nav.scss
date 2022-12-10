@@ -1,0 +1,30 @@
+.auth-nav {
+  @include centered(flex, flex-start, center);
+  margin-left: auto;
+}
+
+.auth-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.auth-nav__link {
+  @include centered(flex, flex-start, center);
+  font-weight: 500;
+  line-height: 1.4px;
+  letter-spacing: 0.02em;
+  color: $silver-color;
+  padding: 32px 0;
+  @include animation(color);
+
+  &:hover {
+    color: $second-color;
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  background-size: cover;
+}
