@@ -5,11 +5,30 @@
 }
 
 .footer__container {
-    @include centered(flex, center, baseline);
+    width: 480px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        flex-wrap: wrap;
+        @include centered(flex, center, baseline)
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+    }
 }
 
 .footer__address-block {
-    display: inline-block;
+    text-align: center;
+
+    // display: inline-block;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 60px;
+        margin-right: 165px;
+    }
 }
 
 .address-block__list {
@@ -18,7 +37,13 @@
 
 .address-block__item {
     &:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+        }
     }
 }
 
@@ -46,12 +71,27 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
+.address-block__list {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
 //Блок приєднуйтесь
 .footer__join-up {
     display: inline-block;
     width: 206px;
     height: 80px;
+    text-align: center;
     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__text {
@@ -100,18 +140,29 @@
 
 //Підписка
 .footer__subscription {
-    margin-left: auto;
+    text-align: center;
 }
 
 .footer__text {
     display: block;
+
+    @media screen and (min-width: 1200px) {
+        text-align-last: left;
+    }
 }
 
 .subscription__input {
-    width: 358px;
+    width: 450px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0;
+    }
+
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -132,6 +183,8 @@
 
 .subscription__btn {
     @include centered(flex, center, center);
+    margin-left: auto;
+    margin-right: auto;
 
     &::after {
         content: '';
@@ -144,5 +197,8 @@
 }
 
 .subscription__wrapper {
-    @include centered(flex, center, center);
+    @media screen and (min-width:1200px) {
+        @include centered(flex, center, baseline);
+
+    }
 }
