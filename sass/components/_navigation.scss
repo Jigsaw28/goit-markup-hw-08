@@ -1,6 +1,29 @@
+.container.page-header__nav {
+  width: 480px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
 .nav__site-nav {
-  @include centered(flex, center, center);
-  margin-left: 93px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    @include centered(flex, center, center);
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include centered(flex, center, center);
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item {

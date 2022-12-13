@@ -27,12 +27,16 @@
         >
         <ul class="site-nav nav__site-nav">
           <li class="site-nav__item">
-            <a class="link site-nav__link site-nav__link--active" href="#">Студія</a>
+            <a class="link site-nav__link site-nav__link--active" href="#"
+              >Студія</a
+            >
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="site-nav__item"><a class="site-nav__link" href="#">Контакти</a></li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="#">Контакти</a>
+          </li>
         </ul>
         <ul class="auth-nav nav__auth-nav">
           <li class="auth-nav__item">
@@ -52,6 +56,71 @@
             </a>
           </li>
         </ul>
+        <!-- Mobile-menu -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="32">
+            <use href="./images/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div
+          class="menu-container nav__menu-container js-menu-container"
+          id="mobile-menu"
+        >
+          <button class="menu-toggle js-close-menu">
+            <svg width="32" height="32">
+              <use href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu menu-container__mobile-menu">
+            <li class="mobile-menu__item">
+              <a
+                href="./index.html"
+                class="mobile-menu__link mobile-menu__link--active"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts menu-container__mobile-contacts">
+            <li class="mobile-contacts__item">
+              <a
+                class="mobile-contacts__link mobile-contacts__link--tel"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
+              <a
+                class="mobile-contacts__link mobile-contacts__link--mail"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials menu-container__mobile-socials">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -437,7 +506,7 @@
         </div>
       </section> 
       <!-- Our clients -->
-       <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="clients__sub-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -485,7 +554,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
     </main>
     <footer class="footer">
       <div class="container footer__container">
@@ -548,7 +617,9 @@
           </ul>
         </div>
         <div class="subscription footer__subscription">
-          <label for="subscribe" class="footer__text">Підпишіться на розсилку</label>
+          <label for="subscribe" class="footer__text"
+            >Підпишіться на розсилку</label
+          >
           <div class="subscription__wrapper">
             <input
               class="subscription__input"
@@ -564,6 +635,13 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
