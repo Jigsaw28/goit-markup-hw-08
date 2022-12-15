@@ -27,14 +27,12 @@
         >
         <ul class="site-nav nav__site-nav">
           <li class="site-nav__item">
-            <a
-              class="link site-nav__link site-nav__link--active"
-              href="./index.html"
-              >Студія</a
-            >
+            <a class="link site-nav__link" href="./index.html">Студія</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Портфоліо</a>
+            <a class="site-nav__link site-nav__link--active" href="#"
+              >Портфоліо</a
+            >
           </li>
           <li class="site-nav__item">
             <a class="site-nav__link" href="#">Контакти</a>
@@ -79,14 +77,14 @@
           </button>
           <ul class="mobile-menu menu-container__mobile-menu">
             <li class="mobile-menu__item">
-              <a
-                href="./index.html"
-                class="mobile-menu__link mobile-menu__link--active"
-                >Студія</a
-              >
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="mobile-menu__link mobile-menu__link--active"
+                >Портфоліо</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a href="" class="mobile-menu__link">Контакти</a>
@@ -149,7 +147,43 @@
           <li class="list-menu__item">
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
-                <img src="./images/techno.jpg" alt="Технокряк" width="370" />
+                <!-- <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img-1_370.webp 370w, ./images/portfolio/img-1_740.webp 740w "
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img-1_370.jpg 370w, ./images/portfolio/img-1_740.jpg 740w "
+                  type="image/jpg" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/img-1_354.webp 354w, ./images/portfolio/img-1_708.webp 708w "
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/portfolio/img-1_354.jpg 354w, ./images/portfolio/img-1_708.jpg 708w "
+                  type="image/jpg" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/img-1_450.webp 450w, ./images/portfolio/img-1_900.webp 900w "
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/portfolio/img-1_450.jpg 450w, ./images/portfolio/img-1_900.jpg 900w "
+                  type="image/jpg" />
+                <img class="card-img" src="./images/portfolio/img-1_370.jpg" alt="Ноутбук" width="450" height="294"
+                  loading="lazy" />
+
+              </picture> -->
+                <img
+                  srcset="
+                    ./images/portfolio/img-1_354.jpg 354w,
+                    ./images/portfolio/img-1_370.jpg 370w,
+                    ./images/portfolio/img-1_450.jpg 450w,
+                    ./images/portfolio/img-1_708.jpg 708w,
+                    ./images/portfolio/img-1_740.jpg 740w,
+                    ./images/portfolio/img-1_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-1_354.jpg "
+                  alt="технокряк"
+                  loading="lazy"
+                />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -165,7 +199,78 @@
           <li class="list-menu__item">
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
-                <img src="./images/goldenstar.jpg" alt="Постер" width="370" />
+                <!-- <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-1_370.webp 370w,
+                      ./images/portfolio/img-1_740.webp 740w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/portfolio/img-1_370.jpg 370w,
+                      ./images/portfolio/img-1_740.jpg 740w
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-1_354.webp 354w,
+                      ./images/portfolio/img-1_708.webp 708w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/img-1_354.jpg 354w,
+                      ./images/portfolio/img-1_708.jpg 708w
+                    "
+                    type="image/jpg"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-1_450.webp 450w,
+                      ./images/portfolio/img-1_900.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/img-1_450.jpg 450w,
+                      ./images/portfolio/img-1_900.jpg 900w
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    class="card-img"
+                    src="./images/portfolio/img-1_370.jpg"
+                    alt="Ноутбук"
+                    width="450"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture> -->
+                <img
+                  srcset="
+                    ./images/portfolio/img-2_354.jpg 354w,
+                    ./images/portfolio/img-2_370.jpg 370w,
+                    ./images/portfolio/img-2_450.jpg 450w,
+                    ./images/portfolio/img-2_708.jpg 708w,
+                    ./images/portfolio/img-2_740.jpg 740w,
+                    ./images/portfolio/img-2_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-2_354.jpg "
+                  alt="постер"
+                  loading="lazy"
+                />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -182,9 +287,18 @@
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
                 <img
-                  src="./images/seafood.jpg"
-                  alt="Лого ресторана"
-                  width="370"
+                  srcset="
+                    ./images/portfolio/img-3_354.jpg 354w,
+                    ./images/portfolio/img-3_370.jpg 370w,
+                    ./images/portfolio/img-3_450.jpg 450w,
+                    ./images/portfolio/img-3_708.jpg 708w,
+                    ./images/portfolio/img-3_740.jpg 740w,
+                    ./images/portfolio/img-3_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-3_354.jpg "
+                  alt="лого ресторана"
+                  loading="lazy"
                 />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
@@ -201,8 +315,20 @@
           <li class="list-menu__item">
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
-                <img src="./images/prime.jpg" alt="навушники" width="370" />
-
+                <img
+                  srcset="
+                    ./images/portfolio/img-4_354.jpg 354w,
+                    ./images/portfolio/img-4_370.jpg 370w,
+                    ./images/portfolio/img-4_450.jpg 450w,
+                    ./images/portfolio/img-4_708.jpg 708w,
+                    ./images/portfolio/img-4_740.jpg 740w,
+                    ./images/portfolio/img-4_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-4_354.jpg "
+                  alt="навушники"
+                  loading="lazy"
+                />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -218,8 +344,20 @@
           <li class="list-menu__item">
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
-                <img src="./images/boxes.jpg" alt="дві коробки" width="370" />
-
+                <img
+                  srcset="
+                    ./images/portfolio/img-5_354.jpg 354w,
+                    ./images/portfolio/img-5_370.jpg 370w,
+                    ./images/portfolio/img-5_450.jpg 450w,
+                    ./images/portfolio/img-5_708.jpg 708w,
+                    ./images/portfolio/img-5_740.jpg 740w,
+                    ./images/portfolio/img-5_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-5_354.jpg "
+                  alt="дві коробки"
+                  loading="lazy"
+                />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -236,9 +374,18 @@
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
                 <img
-                  src="./images/inspiration.jpg"
+                  srcset="
+                    ./images/portfolio/img-6_354.jpg 354w,
+                    ./images/portfolio/img-6_370.jpg 370w,
+                    ./images/portfolio/img-6_450.jpg 450w,
+                    ./images/portfolio/img-6_708.jpg 708w,
+                    ./images/portfolio/img-6_740.jpg 740w,
+                    ./images/portfolio/img-6_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-6_354.jpg "
                   alt="зображення на моніторі"
-                  width="370"
+                  loading="lazy"
                 />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
@@ -256,11 +403,19 @@
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
                 <img
-                  src="./images/limitededition.jpg"
-                  alt="Стаття"
-                  width="370"
+                  srcset="
+                    ./images/portfolio/img-7_354.jpg 354w,
+                    ./images/portfolio/img-7_370.jpg 370w,
+                    ./images/portfolio/img-7_450.jpg 450w,
+                    ./images/portfolio/img-7_708.jpg 708w,
+                    ./images/portfolio/img-7_740.jpg 740w,
+                    ./images/portfolio/img-7_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-7_354.jpg "
+                  alt="стаття"
+                  loading="lazy"
                 />
-
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -277,9 +432,18 @@
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
                 <img
-                  src="./images/lab.jpg"
-                  alt="Брилок із зображенням лого"
-                  width="370"
+                  srcset="
+                    ./images/portfolio/img-8_354.jpg 354w,
+                    ./images/portfolio/img-8_370.jpg 370w,
+                    ./images/portfolio/img-8_450.jpg 450w,
+                    ./images/portfolio/img-8_708.jpg 708w,
+                    ./images/portfolio/img-8_740.jpg 740w,
+                    ./images/portfolio/img-8_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-8_354.jpg "
+                  alt="проект"
+                  loading="lazy"
                 />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">
@@ -297,9 +461,18 @@
             <a class="list-menu__link" href="">
               <div class="list-menu__wrapper">
                 <img
-                  src="./images/growingbusiness.jpg"
-                  alt="зображеня додатко на екрані ноутбука"
-                  width="370"
+                  srcset="
+                    ./images/portfolio/img-9_354.jpg 354w,
+                    ./images/portfolio/img-9_370.jpg 370w,
+                    ./images/portfolio/img-9_450.jpg 450w,
+                    ./images/portfolio/img-9_708.jpg 708w,
+                    ./images/portfolio/img-9_740.jpg 740w,
+                    ./images/portfolio/img-9_900.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                  src="./images/portfolio/img-9_354.jpg "
+                  alt="зображення додатку на екрані ноутбука"
+                  loading="lazy"
                 />
                 <div class="list-menu__overlay">
                   <p class="list-menu__overlay-text">

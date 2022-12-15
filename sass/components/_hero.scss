@@ -24,7 +24,7 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
@@ -41,12 +41,13 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
     padding: 200px 0;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url("/images/hero/hero_1600.jpg");
+      url("/images/hero/hero-1600.jpg");
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -54,14 +55,15 @@
       background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url("/images/hero/hero_3200.jpg");
+        url("/images/hero/hero-3200.jpg");
     }
   }
 }
 
+
 .hero__title {
   font-weight: 900;
-  font-style: 26px;
+  font-size: 26px;
   line-height: calc(42/26);
   letter-spacing: 0.06em;
   text-transform: uppercase;
