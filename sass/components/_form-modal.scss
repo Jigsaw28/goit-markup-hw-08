@@ -27,7 +27,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 448px;
+        min-width: 448px;
     }
 }
 
@@ -80,8 +80,8 @@
         height: 138px;
     }
 
-    @media screen and (min-width: 480px) {
-        width: 448px;
+    @media screen and (min-width: 1200px) {
+        min-width: 448px;
 
     }
 
@@ -132,8 +132,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 425px;
+        min-width: 425px;
         height: 24px;
+        justify-content: center;
     }
 }
 
